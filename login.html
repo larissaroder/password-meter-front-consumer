@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="passwordValidation">
+<head>
+    <title>Avaliador de Segurança de Senha</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="./stylesheets/bootstrap.min.css" />
+    <link rel="stylesheet" href="./stylesheets/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="./stylesheets/bootstrap-select.min.css" />
+</head>
+<body ng-controller="LoginController">
+    <div class="modal-dialog" style="padding-top: 12%">
+        <div class="modal-content">
+            <div class="modal-header">
+               <span>AVALIADOR DE SEGURANÇA DE SENHA</span>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <input ng-change="postValidationPassword()" ng-model="passwordModel" type="password" class="form-control" placeholder="Senha" id= "password" name="password" required="true">
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <input type="button" class="btn btn-block btn-default" value="0%"/>
+                        </div>
+                        <div class="col-sm-3">
+                            <input type="button" class="btn btn-block btn-{{classMessagePassword}}" value="{{passwordStrong}}"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="./javascripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./javascripts/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="./javascripts/angular.min.js"></script>
+    <script type="text/javascript" src="./javascripts/app.js"></script>
+    <script type="text/javascript" src="./javascripts/services/LoginService.js"></script>
+    <script type="text/javascript" src="./javascripts/value/configValue.js"></script>
+    <script type="text/javascript" src="./javascripts/controllers/LoginController.js"></script>
+</html>
