@@ -1,11 +1,6 @@
 app.value("config",{
-    baseUrlPostValidationPasswordConfig: "http://localhost:8099/validation",
+    baseUrlPostValidationPasswordConfig: "http://127.0.0.1:8099/validation",
     shortConfig: "Muito Curta",
-    veryWeakConfig: "Muito Fraca",
-    weakConfig: "Fraca",
-    goodConfig: "Boa",
-    strongConfig: "Forte",
-    veryStrongConfig: "Muito Forte",
     valueVeryWeak: 0,
     valueWeak: 20,
     valueGood: 40,

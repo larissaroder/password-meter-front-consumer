@@ -20,7 +20,7 @@
                 <div class="form-group">
                     <div class="row">
                         <div class="col-sm-3">
-                            <input type="button" class="btn btn-block btn-default" value="0%"/>
+                            <input type="button" class="btn btn-block btn-default" value="{{score}}%"/>
                         </div>
                         <div class="col-sm-3">
                             <input type="button" class="btn btn-block btn-{{classMessagePassword}}" value="{{passwordStrong}}"/>
@@ -30,6 +30,7 @@
             </div>
         </div>
     </div>
+    <div ng-show="status">Ocorreu um Erro ao conectar ao serviço: {{message}}, status: {{status}}</div>
 </body>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.js"></script>
     <script type="text/javascript" src="./javascripts/bootstrap.min.js"></script>
