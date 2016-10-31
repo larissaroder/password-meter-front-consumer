@@ -1,0 +1,22 @@
+<div class="modal-dialog" style="padding-top: 12%" ng-controller="LoginController">
+    <div class="modal-content">
+        <div class="modal-header">
+            <span>AVALIADOR DE SEGURANÇA DE SENHA</span>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+                <input maxlength="50" ng-change="postValidationPassword()" ng-model="passwordModel" type="password" class="form-control" placeholder="Senha" id= "password" name="password" required="true">
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <input type="button" class="btn btn-block btn-default" value="{[{score}]}%"/>
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="button" class="btn btn-block btn-{[{classMessagePassword}]}" value="{[{passwordStrong}]}"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

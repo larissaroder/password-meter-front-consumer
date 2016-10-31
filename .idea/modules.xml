@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/password-meter-consumer.iml" filepath="$PROJECT_DIR$/.idea/password-meter-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/password-meter-frontend-consumer.iml" filepath="$PROJECT_DIR$/.idea/password-meter-frontend-consumer.iml" />
     </modules>
   </component>
 </project>
